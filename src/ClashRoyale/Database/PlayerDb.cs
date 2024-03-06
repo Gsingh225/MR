@@ -85,6 +85,8 @@ namespace ClashRoyale.Database
             catch (Exception exception)
             {
                 Logger.Log(exception, null, ErrorLevel.Fatal);
+                Console.WriteLine("Exception with MaxPlayerId() was: ");
+                Console.WriteLine(exception.ToString());
 
                 return -1;
             }
