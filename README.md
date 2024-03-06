@@ -5,7 +5,6 @@
 
 
 #### A .NET Core Clash Royale Server (v1.9)
-##### Need help? Join our [Discord](https://discord.gg/8cHkNE6)
 
 ## Battles
 The server supports battles, for those a patched client is neccessary.
@@ -51,5 +50,3 @@ To configurate your server, such as the database you have to edit the ```config.
 ###### Battle Server:
 ```git pull && dotnet publish "ClashRoyale.Battles.csproj" -c Release -o app && dotnet app/ClashRoyale.Battles.dll```
 
-## Need help?
-Contact me on Discord (Incredible#2109) or open an issue.
