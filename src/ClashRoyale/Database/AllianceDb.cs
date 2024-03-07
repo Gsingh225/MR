@@ -84,6 +84,8 @@ namespace ClashRoyale.Database
             catch (Exception exception)
             {
                 Logger.Log(exception, null, ErrorLevel.Fatal);
+                Console.WriteLine("Exception with MaxAllianceId() was: ");
+                Console.WriteLine(exception.ToString());
 
                 return -1;
             }
