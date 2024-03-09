@@ -35,6 +35,34 @@ dotnet publish "ClashRoyale.Battles.csproj" -c Release -o app
 ```
 To configurate your server, such as the database you have to edit the ```config.json``` file.
 
+#### Fix the db issue: 
+
+Go into sql and create a database called rrdb
+
+Then (still inside mysql) run:
+```
+CREATE TABLE rrdb.player (
+  `Id` INT AUTO_INCREMENT PRIMARY KEY,
+  `Trophies` INT,
+  `Language` VARCHAR(255),
+  `FacebookId` VARCHAR(255),
+  `Home` VARCHAR(255),
+  `Sessions` VARCHAR(255)
+);
+```
+
+and then run:
+```
+CREATE TABLE rrdb.clan (
+  `Id` INT AUTO_INCREMENT PRIMARY KEY,
+  `Trophies` INT,
+  `RequiredTrophies` INT,
+  `Type` INT,
+  `Region` INT,
+  `Data` BLOB
+);
+```
+
 #### Run the server:
 
 ###### Main Server:
